@@ -17,7 +17,7 @@ function Timeline() {
 
       <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2021 - PRESENT"
+          date="2021 - 2022"
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -32,7 +32,7 @@ function Timeline() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="03/2022 - PRESENT"
+          date="03/2022 - 08/2022"
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
@@ -46,7 +46,7 @@ function Timeline() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="05/2022 - PRESENT"
+          date="05/2022 - 08/2022"
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
