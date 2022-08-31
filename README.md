@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# My portfolio
+This is my first portfolio, it is done with React. All the data from the different parts of the web is taken from a file called "portfolio.js" where you can find different js objets, each one has different info about my professional career.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Folder Structure
+```
+📦src  
+ ┣ 📂assets  
+ ┃ ┗ 📂img  
+ ┃ ┃ ┗ 📜mePhoto.jpg  
+ ┣ 📂components  
+ ┃ ┣ 📂About  
+ ┃ ┃ ┣ 📜About.css  
+ ┃ ┃ ┗ 📜About.jsx  
+ ┃ ┣ 📂Contact  
+ ┃ ┃ ┣ 📜Contact.css  
+ ┃ ┃ ┗ 📜Contact.jsx  
+ ┃ ┣ 📂Footer  
+ ┃ ┃ ┣ 📜Footer.css  
+ ┃ ┃ ┗ 📜Footer.jsx  
+ ┃ ┣ 📂Header  
+ ┃ ┃ ┣ 📜Header.css  
+ ┃ ┃ ┗ 📜Header.jsx  
+ ┃ ┣ 📂Navbar  
+ ┃ ┃ ┣ 📜Navbar.css  
+ ┃ ┃ ┗ 📜Navbar.jsx  
+ ┃ ┣ 📂ProjectContainer  
+ ┃ ┃ ┣ 📜ProjectContainer.css  
+ ┃ ┃ ┗ 📜ProjectContainer.jsx  
+ ┃ ┣ 📂Projects  
+ ┃ ┃ ┣ 📜Projects.css  
+ ┃ ┃ ┗ 📜Projects.jsx  
+ ┃ ┣ 📂ScrollToTop  
+ ┃ ┃ ┣ 📜ScrollToTop.css  
+ ┃ ┃ ┗ 📜ScrollToTop.jsx  
+ ┃ ┣ 📂Skills  
+ ┃ ┃ ┣ 📜Skills.css  
+ ┃ ┃ ┗ 📜Skills.jsx  
+ ┃ ┗ 📂Timeline  
+ ┃ ┃ ┣ 📜Timeline.css  
+ ┃ ┃ ┗ 📜Timeline.jsx  
+ ┣ 📂contexts  
+ ┃ ┗ 📜theme.js  
+ ┣ 📜App.css  
+ ┣ 📜App.js  
+ ┣ 📜index.css  
+ ┣ 📜index.js  
+ ┗ 📜portfolio.js
+```
 
-## Available Scripts
+## Sections
+- About
+This section is a short introduction about me and my professional career
+- Timeline
+I made this with the vertical timeline library, here you will see al my studies and professional experience.
+- Projects
+These are the best projects I made during the frontend development bootcamp, with the links to the github repositories.
+- Skills
+Inside this section you will see all the technologies that I used during my professional career and the ones that I learned inside the bootcamp.
+- Contact
+This section pretty small, you only have two buttons:
+	-  Email me: it has a mailTo property that opens the mail app in your device with my email in the destination.
+	- Download CV: I used S3 service from AWS to upload my cv. It has a public link in order that anyone could see it.
 
-In the project directory, you can run:
+## Functionalities
+- Dark mode: It is done with the useContext hook from react
+- Smooth Scrolling
+- Scroll-up Arrow
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies and Libraries
+As I said at the beginning the portfolio is done entirely with React and also I used S3 service from AWS to upload my CV.
+- Libraries:
+	- Material Icons: for all the icons used in each section.
+	- react-vertical-timeline-component: this is the library I used to list all my studies and experience.
