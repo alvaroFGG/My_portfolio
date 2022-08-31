@@ -59,7 +59,7 @@ const skills = [
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: 'alvarofuentenebrogomez@gmail.com',
-  cv: 'https://cv-alvaro-fuentenebro.s3.amazonaws.com/CV_Alvaro_Fuentenebro_v2.pdf',
+  cv: 'https://cv-alvaro-fuentenebro.s3.amazonaws.com/CV_Alvaro_Fuentenebro.pdf',
 }
 
 export { header, about, projects, skills, contact }
