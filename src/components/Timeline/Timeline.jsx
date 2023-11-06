@@ -4,18 +4,31 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SchoolIcon from '@mui/icons-material/School';
-import WorkIcon from '@mui/icons-material/Work';
-import './Timeline.css'
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
+import "./Timeline.css";
 
 function Timeline() {
   return (
-    
     <div className="experience">
-    <h2 className="title">Studies & Experience</h2>
+      <h2 className="title">Studies & Experience</h2>
       <VerticalTimeline lineColor="#3e497a">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2022 - 2023"
+          iconStyle={{ background: "#000000", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Ufounders</h3>
+          <h4>Full-stack developer</h4>
 
-      <VerticalTimelineElement
+          <p>
+            Development of a saas that helps a founder with the fundraising
+            process
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2021 - 2022"
           iconStyle={{ background: "#000000", color: "#fff" }}
@@ -25,10 +38,9 @@ function Timeline() {
             NTT Data Europe & LATAM
           </h3>
           <h4>Junior Developer</h4>
-          
+
           <p>Software development with SQL</p>
         </VerticalTimelineElement>
-
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -36,13 +48,10 @@ function Timeline() {
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className='nnn'>
-            Frontend Development Bootcamp, Upgrade Hub
-          </h3>
+          <h3 className="nnn">Frontend Development Bootcamp, Upgrade Hub</h3>
 
           <p> Web Development</p>
         </VerticalTimelineElement>
-
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -50,13 +59,10 @@ function Timeline() {
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className='nnn'>
-            Cloud Computing Course, Upgrade Hub
-          </h3>
+          <h3 className="nnn">Cloud Computing Course, Upgrade Hub</h3>
 
           <p>AWS & Azure</p>
         </VerticalTimelineElement>
-
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -65,12 +71,11 @@ function Timeline() {
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-          Software Development Training Course (DAM)
+            Software Development Training Course (DAM)
           </h3>
           <h4>Centro Europeo de Estudios Profesionales</h4>
           {/* <p></p> */}
         </VerticalTimelineElement>
-
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -78,18 +83,10 @@ function Timeline() {
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-          High School
-          </h3>
+          <h3 className="vertical-timeline-element-title">High School</h3>
           <h4>IES Profesor Máximo Trueba</h4>
           {/* <p></p> */}
         </VerticalTimelineElement>
-        
-        
-        
-        
-
-        
       </VerticalTimeline>
     </div>
   );

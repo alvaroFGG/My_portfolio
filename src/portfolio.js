@@ -1,4 +1,4 @@
-import aboutpic from "./assets/img/mePhoto.jpg"
+import aboutpic from "./assets/img/mePhoto.jpeg"
 
 const header = {
   homepage: '',
@@ -10,7 +10,7 @@ const about = {
   name: 'Alvaro Fuentenebro',
   role: 'Software Developer',
   description:
-    "I am 20 years old and I am from Spain. I've been developing webs and other apps since I started a Vocational Training Course about Software Developement. I've worked for a couple of international companies like NTT Data as a programmer. I recently did a Bootcamp about Front-End where I learned how to use Angular, React and other frameworks.",
+"With a solid background in software development, I have accumulated two years of hands-on experience in creating web applications using React and Node. These technologies have not only allowed me to build dynamic and responsive user interfaces but have also provided me with a strong foundation for developing scalable and efficient backend systems. I am constantly seeking ways to improve my skills and stay up to date with the latest industry trends and best practices.",
   social: {
     linkedin: 'https://www.linkedin.com/in/afuentenebrogomez/',
     github: 'https://github.com/alvaroFGG',
@@ -19,26 +19,19 @@ const about = {
 
 const projects = [
   {
-    name: 'BMW Official Page',
+    name: 'React Leaflet App',
     description:
-      'This is a project that I made during the frontend bootcamp, I tried to replicate the BMW page',
-    stack: ['HTML', 'SCSS', 'JavaScript'],
-    sourceCode: 'https://github.com/alvaroFGG/BMW_Page'
+      'This is an app that I wanted to make for the hunters of my village. They wanted to have a map of the zone with the hunting areas and the important places. I used Nextjs and Leaflet to make it.',
+    stack: ['Nextjs', 'Nodejs', 'TypeScript', 'Leaflet', 'MongoDB'],
+    sourceCode: 'https://github.com/alvaroFGG/leaflet-app-herradura'
   },
   {
-    name: 'Poke API',
+    name: 'Breast Cancer Detector',
     description:
-      'This was the final project of the JavaScript module, I used the Pokémon API to make a Pokedex. You can see a home page where the pokemons are shown, a seeker, and each pokemon card has a functionality that shows the stats.',
-    stack: ['JavaScript', 'SCSS', 'HTML','API'],
-    sourceCode: 'https://github.com/alvaroFGG/pokeapi'
-  },
-  {
-    name: 'The Game Awards',
-    description:
-      'This was a group project, it is made with Angular, it has the home component where you can see all the nominated games, a podium where the best three games are shown and a management component. It also has a seeker, animations and routing.',
-    stack: ['HTML', 'SCSS', 'React', 'Redux', 'JSON Server'],
-    sourceCode: 'https://github.com/alvaroFGG/TheGameAwards_React'
-  },
+      'I made this when the world of AI exploted, I wanted to learn how to use it and I made this app that detects breast cancer. It is made with Tensorflow for the neural network and Pandas for the data analysis.',
+    stack: ['Python', 'Tensorflow', 'Pandas'],
+    sourceCode: 'https://github.com/alvaroFGG/breast_cancer_detector_tf'
+  }
 ]
 
 const skills = [
@@ -49,17 +42,20 @@ const skills = [
   'TypeScript',
   'React',
   'Redux',
-  'Angular',
-  'MySQL',
+  'Nextjs',
+  'SQL',
   'MongoDB',
-  'SQL/Oracle',
   'Git',
+  'Nodejs',
+  'Express',
+  'Python',
+  'Nestjs',
+  'React Native',
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'alvarofuentenebrogomez@gmail.com',
-  cv: 'https://cv-alvaro-fuentenebro.s3.amazonaws.com/CV_Alvaro_Fuentenebro.pdf',
+  cv: 'https://drive.google.com/file/d/1o6yAIY5NhUa6R6GBKK0qKpg4FH4UcOu5/view?usp=sharing',
 }
 
 export { header, about, projects, skills, contact }
